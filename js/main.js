@@ -30,5 +30,4 @@ toggle.onclick = () => {
   mn.classList.toggle("active");
   sc.classList.toggle("active");
   clickSound.play();
-  clickSound.repeat(Infinity);
 };
