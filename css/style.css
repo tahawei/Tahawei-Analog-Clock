@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Jost:wght@300&display=swap");
 body {
   display: flex;
   justify-content: center;
@@ -134,3 +135,25 @@ body {
 body.active {
   background-color: #fff;
 }
+/* Start Digital Clock */
+
+.digital-clock {
+  font-family: sans-serif;
+  font-size: 5em;
+  color: #e0e0e0;
+  position: relative;
+  display: none;
+}
+
+/* .digital-clock :nth-child(1) {
+  width: 500px;
+}
+
+.digital-clock :nth-child(3) {
+  width: 500px;
+}
+
+.digital-clock :nth-child(5) {
+} */
+
+/* End Digital Clock */
