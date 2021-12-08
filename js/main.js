@@ -5,16 +5,19 @@ let mn = document.querySelector(".mn");
 let sc = document.querySelector(".sc");
 
 // Digital Clock
+let clickSound = document.querySelector("#clickSound");
 let analog_time = document.querySelector(".clock");
 let time = document.querySelector(".digital-clock");
 
 analog_time.onclick = () => {
   time.style.display = "block";
   analog_time.style.display = "none";
+  clickSound.play();
 };
 time.onclick = () => {
   time.style.display = "none";
   analog_time.style.display = "inherit";
+  clickSound.play();
 };
 
 setInterval(() => {
@@ -64,7 +67,6 @@ setInterval(() => {
 let toggle = document.querySelector(".toggle");
 let body = document.querySelector("body");
 let clock = document.querySelector(".clock");
-let clickSound = document.querySelector("#clickSound");
 toggle.onclick = () => {
   toggle.classList.toggle("active");
   body.classList.toggle("active");
@@ -72,5 +74,6 @@ toggle.onclick = () => {
   hr.classList.toggle("active");
   mn.classList.toggle("active");
   sc.classList.toggle("active");
+  time.classList.toggle("active");
   clickSound.play();
 };

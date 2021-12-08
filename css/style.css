@@ -144,6 +144,9 @@ body.active {
   position: relative;
   display: none;
 }
+.digital-clock.active {
+  color: #091921;
+}
 
 /* .digital-clock :nth-child(1) {
   width: 500px;
